@@ -1,12 +1,12 @@
-<p style="color: green"><%= notice %></p>
-<h1>Article</h1>
-
+<div class="card" style="width: 20rem;">
+    <h4 class="card-header">Article</h4>
+     <div class="card-body">
 <%= render @article %>
 
 <div>
-    <%= link_to "Edit this article", edit_article_path(@article), class: 'btn btn-secondary' %>
+    <!--     <%= link_to "Edit this article", edit_article_path(@article), class: 'btn btn-secondary' %>
     <br/>    <br>
-    <%= button_to "Delete", delete_article_path, method: :delete, confirm: "Are you sure?", class: 'btn btn-danger' %>
+        <%= button_to "Delete", delete_article_path, method: :delete, confirm: "Are you sure?", class: 'btn btn-danger' %> -->
     <br/>
     <%= link_to "Back", articles_path, class: 'btn btn-dark' %>
 </div>

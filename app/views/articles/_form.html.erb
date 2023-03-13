@@ -2,7 +2,6 @@
         <% if article.errors.any? %>
             <div>
                 <h2><%= pluralize(article.errors.count, "error") %> prohibited this article from being saved: </h2>
-
                 <ul>
                     <% article.errors.each do |error| %>
                     <li><%= error.full_messages %></li>
@@ -10,18 +9,17 @@
                 </ul>
             </div>
         <% end %>
-
   <div class="row mb-3">
-    <label for="inputEmail3" class="col-sm-2 col-form-label"><%= form.label :first_name %></label>
-    <div class="col-sm-6">
-    <%= form.text_field :name, class: 'form-control', placeholder: "First name" %>
+    <label class=" col-form-label"><%= form.label :Name %></label>
+    <div>
+    <%= form.text_field :name, class: 'form-control', placeholder: "Name" %>
     </div>
   </div>
 
   <div class="row mb-3">
-    <label for="inputEmail3" class="col-sm-2 col-form-label"><%= form.label :last_name%></label>
-    <div class="col-sm-6">
-    <%= form.text_field :body, class: 'form-control', placeholder: "Last name"  %>
+    <label class=" col-form-label"><%= form.label :body%></label>
+    <div>
+    <%= form.text_area :body, class: 'form-control rows-4', placeholder: "Body"  %>
     </div>
   </div>
 
